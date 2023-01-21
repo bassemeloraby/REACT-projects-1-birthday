@@ -1,14 +1,17 @@
-import React from 'react'
-import Navbar from './Navbar'
-import Hero from './Hero'
-import Sidebar from './Sidebar'
-import Submenu from './Submenu'
+import React, { Fragment } from 'react';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import Sidebar from './Sidebar';
+import Submenu from './Submenu';
 function App() {
   return (
-    <>
-      <h2>stripe submenus setup</h2>
-    </>
-  )
+    <Fragment>
+      <Navbar />
+      <Sidebar />
+      <Hero />
+      <Submenu />
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
